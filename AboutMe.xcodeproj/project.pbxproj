@@ -13,6 +13,8 @@
 		2E809A4F1AA9188800301D6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E809A4E1AA9188800301D6D /* Images.xcassets */; };
 		2E809A521AA9188800301D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E809A501AA9188800301D6D /* LaunchScreen.xib */; };
 		2E809A5E1AA9188800301D6D /* AboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E809A5D1AA9188800301D6D /* AboutMeTests.swift */; };
+		2E809A681AA919C100301D6D /* hobbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E809A671AA919C100301D6D /* hobbyVC.swift */; };
+		2E809A6A1AA91C5900301D6D /* detailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E809A691AA91C5900301D6D /* detailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		2E809A571AA9188800301D6D /* AboutMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E809A5C1AA9188800301D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E809A5D1AA9188800301D6D /* AboutMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeTests.swift; sourceTree = "<group>"; };
+		2E809A671AA919C100301D6D /* hobbyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hobbyVC.swift; sourceTree = "<group>"; };
+		2E809A691AA91C5900301D6D /* detailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				2E809A471AA9188800301D6D /* AppDelegate.swift */,
 				2E809A491AA9188800301D6D /* ViewController.swift */,
 				2E809A4B1AA9188800301D6D /* Main.storyboard */,
+				2E809A691AA91C5900301D6D /* detailVC.swift */,
+				2E809A671AA919C100301D6D /* hobbyVC.swift */,
 				2E809A4E1AA9188800301D6D /* Images.xcassets */,
 				2E809A501AA9188800301D6D /* LaunchScreen.xib */,
 				2E809A451AA9188800301D6D /* Supporting Files */,
@@ -161,9 +167,11 @@
 				TargetAttributes = {
 					2E809A411AA9188800301D6D = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 					};
 					2E809A561AA9188800301D6D = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2E809A411AA9188800301D6D;
 					};
 				};
@@ -213,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E809A4A1AA9188800301D6D /* ViewController.swift in Sources */,
+				2E809A6A1AA91C5900301D6D /* detailVC.swift in Sources */,
+				2E809A681AA919C100301D6D /* hobbyVC.swift in Sources */,
 				2E809A481AA9188800301D6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +351,7 @@
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -351,6 +362,7 @@
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -369,6 +381,7 @@
 				INFOPLIST_FILE = AboutMeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AboutMe.app/AboutMe";
 			};
 			name = Debug;
@@ -384,6 +397,7 @@
 				INFOPLIST_FILE = AboutMeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AboutMe.app/AboutMe";
 			};
 			name = Release;
@@ -407,6 +421,7 @@
 				2E809A631AA9188800301D6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E809A641AA9188800301D6D /* Build configuration list for PBXNativeTarget "AboutMeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				2E809A661AA9188800301D6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
